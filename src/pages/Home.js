@@ -97,13 +97,14 @@ const triangle2 = Webanimation({
                  float : "right" ,
                  position : "relative",
                  top : '10vh', 
-                 right: '2vw'}} ></img>
+                 right: '2vw',
+                 backgroundColor: 'white'}} ></img>
             <Banner />
             <img ref={triangle2.ref} src={IMG} style={
                 {height : '20vh',
                 position : "relative",
                 bottom : '3.8vh',
-                background: 'transparent'
+                backgroundColor: 'white'
                  }} ></img>
                 <div className="background" ref={BounceInUpAnimation.ref}>
                     <ul className="list" ref={refContentWriting.ref}>
