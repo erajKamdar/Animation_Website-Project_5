@@ -1,0 +1,111 @@
+$black: #333;
+$white: white;
+$orange: #ffac41;
+
+.menu {
+    display: none;
+    z-index: 9;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    .menu-secondary-color {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        background-color: $orange;
+    }
+    .menu-layer {
+        position: relative;
+        background-color: lightcyan;
+        height: 100%;
+        overflow: hidden;
+        .menu-city-background {
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+        }
+        .container {
+            position: relative;
+            .menu-links {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                top: 200px;
+                position: relative;
+                @media screen and (max-width: 768px) {
+                    flex-direction: column;
+                }
+                nav {
+                    display: block;
+                    padding-left: 100px;
+                    @media screen and (max-width: 768px) {
+                        padding-left: 0;
+                    }
+                    ul {
+                        padding: 0;
+                        margin: 0;
+                        li {
+                            list-style-type: none;
+                            overflow: hidden;
+                            position: relative;
+                            text-decoration: underline;
+                            padding: 5px;
+                            font-style: italic;
+                            a {
+                                
+                                text-decoration: none;
+                                font-size: 60px;
+                                line-height: 100px;
+                                text-align: left;
+                                color: blue;
+                                transition: .5s ease-in-out;
+                                @media screen and (max-width: 768px) {
+                                    font-size: 50px;
+                                    line-height: 70px;
+                                }
+                                &:hover {
+                                    color: blueviolet;
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                    h3 {
+                        font-size: 30px;
+                        letter-spacing: 2px;
+                        @media screen and (max-width: 768px) {
+                            font-size: 20px;
+                            line-height: 20px;
+                            padding-top: 50px;
+                        }
+                    }
+                    p {
+                        width: 60%;
+                        font-size: 17px;
+                        margin: 0 auto;
+                        line-height: 20px;
+                        letter-spacing: 2px;
+                        @media screen and (max-width: 768px) {
+                            width: 100%;
+                            line-height: 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }

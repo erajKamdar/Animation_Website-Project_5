@@ -1,0 +1,98 @@
+$black: #333;
+$white: #ffffff;
+$orange: #ffac41;
+
+.food {
+    height: 100%;
+    // background-image: url(../images/backAbout.gif);
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+        }
+        height: 100%;
+        overflow: hidden;
+        .left-container {
+            width: 50%;
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
+            .left-container-inner {
+                width: 100%;
+                height: 80vh;
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                    height: 500px;
+                }
+
+                .img_set_1{
+                    height: 80vh;
+                    width: 50vw;
+                   
+                @media screen and(max-width: 768px) {
+                    width: 100%;
+                    height: 500px;
+                }
+                }
+                    h2 {
+                        color: $orange;
+                        font-size: 2rem;
+                        padding: 100px 20px 0px 20px ;
+                        margin: 0;
+                        z-index: 11;
+                        text-align: center;
+                    }
+                    .bullets {
+                        padding-top: 80px;
+                        @media screen and (max-width: 768px) {
+                            padding-top: 40px;
+                        }
+                        ul {
+                            li {
+                                font-size: 17px;
+                                margin-bottom: 10px;
+                                color: white;
+                                letter-spacing: 1.5px;
+                                line-height: 20px;
+                                @media screen and (max-width: 768px) {
+                                    font-size: 15px;
+                                }
+                            }
+                        }
+                    }
+            }
+        }
+        .right-container{
+            width: 50%;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $black;
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
+            .right-container-inner {
+                .set_img_2{
+                    height: 10vh;
+                    width: 10vw;
+                    position: relative;
+                    left: 37%;
+                }
+                .right-text-content {
+                    h2 {
+                        text-align: center;
+                    }
+                    h3 {
+                        color: $orange;
+                    }
+                        p {
+                            font-style: italic;
+                        }
+                }
+            }
+        }
+    }
+}
