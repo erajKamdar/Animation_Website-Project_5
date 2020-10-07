@@ -60,23 +60,25 @@ $orange: #ffac41;
                             list-style-type: none;
                             overflow: hidden;
                             position: relative;
-                            text-decoration: underline;
+                            font-weight: bold;
                             padding: 5px;
                             font-style: italic;
+                            font-family: serif;
+                            box-shadow: -8px 7px 8px 7px rgba(169, 218, 238, 0.3);
                             a {
                                 
                                 text-decoration: none;
                                 font-size: 60px;
                                 line-height: 100px;
                                 text-align: left;
-                                color: blue;
+                                color: rgba(0, 0, 255, 0.87);
                                 transition: .5s ease-in-out;
                                 @media screen and (max-width: 768px) {
                                     font-size: 50px;
                                     line-height: 70px;
                                 }
                                 &:hover {
-                                    color: blueviolet;
+                                    color: rgb(206, 160, 248);
                                     
                                 }
                             }

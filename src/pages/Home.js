@@ -2,8 +2,8 @@ import React, {useRef} from 'react'
 import gsap from 'gsap';
 import useWebAnimations, {headShake, bounceInUp} from '@wellyshen/use-web-animations'
 import '../styles/Home.scss';
-import IMG from '../images/images.jpg';
-import IMG1 from '../images/images_1.jpg'
+import IMG from '../images/images (3).png';
+import IMG1 from '../images/images_1.png'
 import Banner from '../components/banner/Banner';
 import Webanimation from '@wellyshen/use-web-animations';
 import DC from '../images/background.gif';
@@ -63,10 +63,10 @@ const triangle2 = Webanimation({
     let cityBackground = useRef(null);
 
     const cities = [
-    {name: 'Black & White', image: DC},
+    {name: 'Pink Petals', image: DC},
     {name: 'Colour White', image: LA},
     {name: 'Blue White', image: NO},
-    {name: 'Kite White', image: NYC},
+    {name: 'Star White', image: NYC},
     ]
 
     const handleCity = city => {
@@ -96,15 +96,15 @@ const triangle2 = Webanimation({
                 {height : '20vh',
                  float : "right" ,
                  position : "relative",
-                 top : '10vh', 
+                 top : '7vh', 
                  right: '2vw',
-                 backgroundColor: 'white'}} ></img>
+                 }} ></img>
             <Banner />
             <img ref={triangle2.ref} src={IMG} style={
                 {height : '20vh',
                 position : "relative",
                 bottom : '3.8vh',
-                backgroundColor: 'white'
+                
                  }} ></img>
                 <div className="background" ref={BounceInUpAnimation.ref}>
                     <ul className="list" ref={refContentWriting.ref}>

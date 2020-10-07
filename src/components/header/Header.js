@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {withRouter, Link} from "react-router-dom";
 import useWebAnimations, { jello, bounceInDown, flip } from '@wellyshen/use-web-animations';
 import Menu from '../menu/Menu';
-import LOGO from '../../images/logo.jpg';
+import LOGO from '../../images/logo.png';
 import './Header.scss';
 import '../background/Background.scss';
 // import Webanimation from '@wellyshen/use-web-animations';
